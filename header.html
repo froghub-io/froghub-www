@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--    <script src="./lib/vue.min.js"></script>-->
+    <script src="./lib/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+</head>
+<body>
+<div id="top-content">
+    <div class="top-content-logo">
+        FILFROG
+    </div>
+    <div class="top-content-right-menu">
+        <div v-for="(item,index) in menuList" :key="index">
+            {{item['label']}}
+        </div>
+    </div>
+</div>
+</body>
+
+<script>
+    new Vue({
+        el: '#top-content',
+        data: {
+            menuList: [
+                {
+                    icon: '',
+                    label: '解决方案',
+                    route: ''
+                },
+                {
+                    icon: '',
+                    label: 'Cloud c2',
+                    route: ''
+                }
+            ]
+        }
+    })
+</script>
+<style>
+    #top-content {
+        width: 100%;
+        height: 100px;
+        background-color: red;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .top-content-right-menu {
+        width: 300px;
+        margin-right: 220px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #4cd964;
+    }
+
+    .top-content-logo {
+        background-color: cadetblue;
+        font-size: 42px;
+        margin-left: 90px;
+    }
+</style>
+
+</html>

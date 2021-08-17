@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>FILFROG</title>
+    <meta name="keywords" content="FILFROG" />
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/tool.css">
+<!--    <script src="./lib/vue.min.js"></script>-->
+    <script src="./lib/vue.js"></script>
+    <script src="./component/Tool.js"></script>
+</head>
+<body>
+    <div id="app-content">
+        <Tool></Tool>
+        <div class="header-iframe">
+            <iframe id="header" src="./header.html" style="width:100%;height:100%;" frameborder="0" name="header"></iframe>
+        </div>
+        <div class="first-content content-iframe">
+            <div class="first-content-details">
+                <div class="first-content-details-title">
+                    FILFROG
+                </div>
+                <div class="first-content-details-title-level">
+                    FILECOIN的最佳实践
+                </div>
+                <div class="first-content-details-value">
+                    FILECOIN的最佳实践FILECOIN的最佳实践FILECOIN的最佳实践FILECOIN的最佳实践FILECOIN的最佳实践FILECOIN的最佳实践FILECOIN的最佳实践FILECOIN的最佳实践
+                </div>
+                <div class="first-content-details-button">
+                    FILFROG
+                </div>
+            </div>
+        </div>
+
+        <div class="two-content content-iframe">
+            <div class="title-button">
+                算法
+            </div>
+            <div class="h1-title-dark">
+                <span>更好的算法</span>
+                <span style="margin-left: 10px;">更高得效率</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    new Vue({
+        el: '#app-content',
+    })
+</script>
+<style>
+    .header-iframe{
+        width: 100%;
+        height: 100px;
+    }
+
+    .content-iframe {
+        width: 100%;
+        height: 700px;
+    }
+
+    .first-content {
+        display: flex;
+        flex-direction: row;
+        background-color: #3F536E;
+    }
+
+    .first-content-details {
+        display: flex;
+        flex-direction: column;
+        background-color: #007aff;
+        justify-content: center;
+        margin-left: 10vw;
+    }
+
+    .first-content-details-title {
+        font-weight: bold;
+        font-size: 46px;
+    }
+
+    .first-content-details-title-level {
+        font-weight: 400;
+        font-size: 46px;
+    }
+
+    .first-content-details-value {
+        width: 500px;
+        font-size: 20px;
+    }
+
+    .first-content-details-button{
+        width: 150px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 45px;
+        background-color: #f6c123;
+    }
+
+    .two-content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+</style>
+
+</html>
