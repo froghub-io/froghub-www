@@ -1,50 +1,424 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>FILFROG</title>
-    <meta name="keywords" content="FILFROG" />
+    <meta name="keywords" content="FILFROG"/>
     <link rel="stylesheet" type="text/css" href="./css/common.css">
     <link rel="stylesheet" type="text/css" href="./css/tool.css">
-<!--    <script src="./lib/vue.min.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="./css/flog.css">
+    <!--    <script src="./lib/vue.min.js"></script>-->
     <script src="./lib/vue.js"></script>
     <script src="./component/Tool.js"></script>
+    <script src="./component/FLogo.js"></script>
 </head>
 <body>
-    <div id="app-content">
-        <Tool></Tool>
-        <div class="header-iframe">
-            <iframe id="header" src="./header.html" style="width:100%;height:100%;" frameborder="0" name="header"></iframe>
-        </div>
-        <div class="first-content content-iframe">
-            <div class="first-content-details">
-                <div class="first-content-details-title">
-                    FILFROG
-                </div>
-                <div class="first-content-details-title-level">
-                    FILECOIN的最佳实践
-                </div>
-                <div class="first-content-details-value">
-                    FILECOIN的最佳实践FILECOIN的最佳实践FILECOIN的最佳实践FILECOIN的最佳实践FILECOIN的最佳实践FILECOIN的最佳实践FILECOIN的最佳实践FILECOIN的最佳实践
-                </div>
-                <div class="first-content-details-button">
+<div id="app-content">
+    <Tool></Tool>
+    <div class="header-iframe header-iframe-height">
+        <iframe id="header" src="./header.html" style="width:100%;height:100%;" frameborder="0" name="header"></iframe>
+    </div>
+    <div class="first-content content-iframe">
+        <div class="header-iframe-height"></div>
+        <div style="width: 100%;height: 130px"></div>
+        <div class="first-content-details padding-left">
+            <div class="first-content-details-title">
+                FILFROG
+            </div>
+            <div class="h15px"></div>
+            <div class="first-content-details-title-level">
+                FILECOIN的最佳实践
+            </div>
+            <div class="h50px"></div>
+            <div class="first-content-details-value">
+                FilFrog 使在Filecoin主网上扇区封装变得更稳定高效， 旨在输出最佳的filecoin实现方案： <br/>集群稳定、高效增长、存储安全、高收益率。 <br/>以最大程度发挥机器性能达到最稳定高效的算力增长。
+            </div>
+            <div class="h60px"></div>
+            <div class="first-content-details-button">
+                <div class="index-button">
                     FILFROG
                 </div>
             </div>
         </div>
 
-        <div class="two-content content-iframe">
-            <div class="title-button">
-                算法
+        <img src="./static/img/bg/bg.png" class="first-content-bg" alt="filfrog">
+        <img src="./static/img/bg/f.png" width=895 height=852 class="first-content-f" alt="filfrog">
+        <img src="./static/img/bg/h1.png" width=755 height=543 class="first-content-h1" alt="filfrog">
+        <img src="./static/img/bg/h2.png" width=753 height=542 class="first-content-h2" alt="filfrog">
+        <img src="./static/img/bg/text1.png" width=559 height=426 class="first-content-text1" alt="filfrog">
+        <img src="./static/img/bg/text2.png" width=492 height=398 class="first-content-text2" alt="filfrog">
+    </div>
+    <div class="h58px"></div>
+    <div class="two-content content-iframe">
+        <div class="title-button" style="margin-bottom: 30px">
+            算法
+        </div>
+        <div class="h1-title-dark">
+            <span>更好的算法</span>
+            <span style="margin-left: 10px;">更高的效率</span>
+        </div>
+        <div class="f-logo-icon">
+            <f-logo></f-logo>
+        </div>
+        <div class="two-content-right">
+            <div class="two-content-right-item" style="transform: translateX(-111px)">
+                <img src="./static/img/two/icon1.png" width=97 height=111 alt="">
+                <img src="./static/img/two/line.png" width=140 height=17 alt="">
+                <div>
+                    <div class="two-content-right-item-title">
+                        裁剪AP阶段，节省cpu利用率
+                    </div>
+                    <div class="h15px"></div>
+                    <div class="two-content-right-item-content">
+                        通过我们的优化算法，裁剪AP的计算过程，节约了5分钟的高占用cpu过程
+                    </div>
+                </div>
             </div>
-            <div class="h1-title-dark">
-                <span>更好的算法</span>
-                <span style="margin-left: 10px;">更高得效率</span>
+            <div class="h60px"></div>
+            <div class="two-content-right-item">
+                <img src="./static/img/two/icon2.png" width=97 height=111 alt="">
+                <img src="./static/img/two/line.png" width=140 height=17 alt="">
+                <div>
+                    <div class="two-content-right-item-title">
+                        通过cpu工程，深度优化复制证明
+                    </div>
+                    <div class="h15px"></div>
+                    <div class="two-content-right-item-content">
+                        充分开发cpu的超线程能力，仅双路AMD7302就可以同时并行18路的 P1，日
+                        常 P1 达到 4.2TiB+，cpu利用率能达到 80% 以上
+                    </div>
+                </div>
+            </div>
+            <div class="h60px"></div>
+            <div class="two-content-right-item">
+                <img src="./static/img/two/icon3.png" width=97 height=111 alt="">
+                <img src="./static/img/two/line.png" width=140 height=17 alt="">
+                <div>
+                    <div class="two-content-right-item-title">
+                        压榨gpu，优化波塞冬哈希
+                    </div>
+                    <div class="h15px"></div>
+                    <div class="two-content-right-item-content">
+                        支持单/双卡同时计算P2的过程，单卡的GeForce RTX 2080 Ti 显卡就能满足
+                        单日 3TiB++ 的 P2 产量，使用双3090，只需要 5m50s 就能完成一个 p2
+                        的计算，日产量可以达到 7TiB++
+                    </div>
+                </div>
+            </div>
+            <div class="h60px"></div>
+            <div class="two-content-right-item" style="transform: translateX(-111px)">
+                <img src="./static/img/two/icon4.png" width=97 height=111 alt="">
+                <img src="./static/img/two/line.png" width=140 height=17 alt="">
+                <div>
+                    <div class="two-content-right-item-title">
+                        深度优化零知识证明，降低内存，提高计算速度
+                    </div>
+                    <div class="h15px"></div>
+                    <div class="two-content-right-item-content">
+                        通过深度开发gpu的能力，重写原有的零知识算法，提高了单个c2的计算速度
+                        和所消耗的内存，也解决了多显卡机器并行多个计算的能力。同时降低了时空
+                        证明和爆块的计算速度
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./static/img/bg/bg2.png" class="first-content-bg2" alt="filfrog">
+    </div>
+
+    <div class="three-content">
+        <div class="three-content-left">
+            <div class="title-button" style="margin-bottom: 30px">
+                调度
+            </div>
+            <div class="h1-title" style="margin-bottom: 50px">
+                <span>智能任务调度</span>
+                <span style="margin-left: 10px;">适配多种机型</span>
+            </div>
+
+            <div class="three-content-left-content-title">
+                一个聪明的任务调度系统，高效办事
+            </div>
+
+            <div class="three-content-left-content">
+                <img src="./static/img/three/gou.png" width=21 height=21 alt="">
+                <div>
+                    全自动智能任务调度，保证机器满负载运行。
+                </div>
+            </div>
+            <div class="three-content-left-content">
+                <img src="./static/img/three/gou.png" width=21 height=21 alt="">
+                <div>
+                    支持部署无集群归属的工作节点，不用当心大机房多Miner的情况下，worker切换需要清理剩余工作量的麻烦。
+                </div>
+            </div>
+            <div class="three-content-left-content">
+                <img src="./static/img/three/gou.png" width=21 height=21 alt="">
+                <div>
+                    适配多种机型，异机接口混合部署，横向扩容。
+                </div>
+            </div>
+        </div>
+        <div class="three-content-right">
+            <img src="./static/img/three/bg-right.png" width=513 height=498 alt="">
+        </div>
+    </div>
+
+    <div class="four-content">
+        <div class="title-button" style="margin-bottom: 30px;margin-top: 68px;">
+            时空证明
+        </div>
+        <div class="h1-title-dark" style="margin-bottom: 100px">
+            <span>分布式时空证明</span>
+            <span style="margin-left: 10px;">多节点协助完成</span>
+        </div>
+        <div class="four-content-cards">
+            <div class="four-content-card">
+                <img src="./static/img/fout/icon1.png" width=76 height=87 alt="">
+                <div class="four-content-card-content">
+                    远程分布式计算，<br/>
+                    降低对机器配置的依赖
+                </div>
+            </div>
+            <div class="four-content-card-2">
+                <img src="./static/img/fout/icon2.png" width=76 height=87 alt="">
+                <div class="four-content-card-content">
+                    优化算法，提高计算速度
+                </div>
+            </div>
+            <div class="four-content-card">
+                <img src="./static/img/fout/icon3.png" width=76 height=87 alt="">
+                <div class="four-content-card-content">
+                    支持极大PiB的集群<br/>
+                    稳定准时的提交时空证明。
+                </div>
             </div>
         </div>
     </div>
+
+    <div class="five-content">
+        <div class="title-button" style="margin-bottom: 30px;margin-top: 68px;">
+            Cloud C2
+        </div>
+        <div class="h1-title" style="margin-bottom: 100px">
+            <span>拆分独立c2计算集群</span>
+            <span style="margin-left: 10px;">去冗余更灵活</span>
+        </div>
+
+        <div class="five-content-bottom">
+            <div class="five-content-bottom-left">
+                <div class="five-content-bottom-left-title">
+                    分布式高可用的Cloud c2集群，通过Restful远程接入提供c2云计算服务
+                </div>
+                <img src="./static/img/five/img1.png" width=324 height=180 alt="">
+            </div>
+            <div class="five-content-bottom-mid">
+                <img src="./static/img/five/icon1.png" width=45 height=45 alt="">
+                <div class="h25px"></div>
+                <img src="./static/img/five/line.png" width=2 height=283 alt="">
+                <div class="h25px"></div>
+                <img src="./static/img/five/icon2.png" width=45 height=45 alt="">
+            </div>
+            <div class="five-content-bottom-right">
+                <img src="./static/img/five/img2.png" width=452 height=239 alt="">
+                <div class="five-content-bottom-left-title">
+                    分布式高可用的Cloud c2集群，通过Restful远程接入提供c2云计算服务
+                </div>
+            </div>
+        </div>
+
+        <div class="five-content-controller-button">
+            控制台
+            <div class="five-content-controller-button-icon">
+                <img src="./static/img/five/controller-icon2.png" width=12 height=12 alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="six-content">
+        <div class="title-button" style="margin-bottom: 30px;margin-top: 68px;">
+            GAS
+        </div>
+        <div class="h1-title-dark" style="margin-bottom: 100px">
+            <span>监测Gas</span>
+            <span style="margin-left: 10px;">节约gas消耗</span>
+        </div>
+
+        <div class="six-content-bottom">
+            <div class="six-content-bottom-left">
+                <div style="width: 629px;margin-left: 60px;">
+                    root@Miner:~#lotus-miner sealing model gas-control
+                    0.5 nanoFIL
+                    It has been switched to the intelligent
+                    control gas mode, when the base fee exceeds 0.5 nano
+                    FIL to control the sending of the message
+                </div>
+            </div>
+
+            <div class="six-content-bottom-right">
+                <div class="three-content-left-content">
+                    <img src="./static/img/three/gou.png" width=21 height=21 alt="">
+                    <div style="margin-left: 33px">
+                        实时监测全网Base Fee动态浮动
+                    </div>
+                </div>
+
+                <div class="three-content-left-content">
+                    <img src="./static/img/three/gou.png" width=21 height=21 alt="">
+                    <div style="margin-left: 33px">
+                        智能调控发送消息频率，以降低节点的平均gas消耗量
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="seven-content">
+        <div class="seven-content-left">
+            <div class="title-button" style="margin-bottom: 30px;margin-top: 150px;">
+                孤块
+            </div>
+            <div class="h1-title" style="margin-bottom: 50px">
+                <span>精准把握每一次爆块权</span>
+                <span style="margin-left: 10px;">才是硬实力</span>
+            </div>
+            <div class="seven-content-left-content">
+                通过更快的同步TipSet，更早知道爆块，更快更精准的计算，更低的计算失败率和
+                更快的提交数据，得到网络的认可，把握每一次爆块。
+            </div>
+
+            <div class="seven-content-left-content-2">
+                上帝的骰子我们无法把控，但是我们懂得把握机会。
+            </div>
+        </div>
+    </div>
+
+    <div class="eight-content">
+        <div class="eight-content-left">
+            <div class="title-button" style="margin-bottom: 30px;margin-top: 110px">
+                扇区修复
+            </div>
+            <div class="h1-title-dark" style="margin-bottom: 40px">
+                <span>修复各种原因造成数据丢失的扇区</span>
+            </div>
+            <div class="eight-content-left-content">
+                因磁盘损坏而造成的永久性数据丢失，通过扇区修复技术可在24小时内修复扇区数据，并通过下一次的
+                时空证明，避免受到惩罚或者终止扇区。
+            </div>
+        </div>
+        <div class="eight-content-right">
+            <img src="./static/img/eight/img.png" width=374 height=354 alt="">
+        </div>
+    </div>
+
+    <div class="nine-content">
+        <div class="title-button" style="margin-bottom: 30px;margin-top: 88px;">
+            集群迁移
+        </div>
+        <div class="h1-title" style="margin-bottom: 70px">
+            <span>多种不停机迁移集群方案任你选择</span>
+        </div>
+
+        <div class="nine-content-bottom">
+            <div class="nine-content-bottom-left">
+                <img src="./static/img/nine/img.png" width=695 height=179 alt="">
+            </div>
+            <div class="nine-content-bottom-right" >
+                我们有多种通过实战检验过的集群迁移方案，根据您的实际情况进行选择，
+                均能做到不停机迁移和低成本。
+            </div>
+        </div>
+    </div>
+
+    <div class="ten-content">
+        <div class="title-button" style="margin-bottom: 30px;margin-top: 88px;">
+            FPGA
+        </div>
+        <div class="h1-title-dark" style="margin-bottom: 40px">
+            <span>强劲的FPGA</span>
+            <span style="margin-left: 10px;">GPU的替代解决方案</span>
+        </div>
+
+        <div class="ten-content-bottom">
+            <div class="ten-content-bottom-item ten-content-bottom-items">
+                <img src="./static/img/ten/fpga.png" class="ten-content-bottom-item-img" width=86 height=98 alt="">
+                使用FPGA卡进行 P2 任务运算，双卡封装32GiB扇区效率最高可达 8TiB+/日。
+            </div>
+            <div class="ten-content-bottom-item2 ten-content-bottom-items">
+                FPGA 芯片方案功耗仅约为GeForce RTX 3090 显卡的 30%， 可以有效地节省电力及机柜费用。
+                <img src="./static/img/ten/fpga2.png" class="ten-content-bottom-item-img-right" width=86 height=98 alt="">
+            </div>
+            <div class="ten-content-bottom-item3 ten-content-bottom-items">
+                <img src="./static/img/ten/fpga3.png" class="ten-content-bottom-item-img" width=86 height=98 alt="">
+                支持 32GB 和 64GB 两种扇区。
+            </div>
+        </div>
+    </div>
+
+
+    <div class="eleven-content">
+        <div class="eleven-content-top">
+            <div class="eleven-content-top-left">
+                <div class="title-button" style="margin-bottom: 30px;">
+                    全时监控
+                </div>
+                <div class="h1-title" style="margin-bottom: 40px">
+                    <span>让你掌握集群最新动态</span>
+                </div>
+
+                <div class="eleven-content-top-left-content">
+                    FilFrog为你全天候监控集群服务器的运行情况，<br/> 包括算力机运行状态、空闲情况，调度机任务进度、待执行任务列表，存储空间余量数据等全方面的数据监控。<br/> 任何机器运行异常和错误告警都将在发生的5分钟内通过钉钉消息及时反馈。
+                </div>
+            </div>
+            <div class="eleven-content-top-right">
+                <img src="./static/img/eleven/img.png" width=294 height=359 alt="" style="transform: translateY(50px)">
+            </div>
+        </div>
+        <div class="eleven-content-bottom">
+
+            <div style="margin-right: 94px">
+                <img src="./static/img/eleven/logo.png" width="198" height="38" alt="FILFROG">
+            </div>
+
+            <div class="eleven-content-bottom-icons">
+                <div class="eleven-content-bottom-icon">
+                    <img src="./static/img/eleven/icon1.png" width=52 height=52 alt="">
+                </div>
+                <div class="eleven-content-bottom-icon">
+                    <img src="./static/img/eleven/icon2.png" width=52 height=52 alt="">
+                </div>
+                <div class="eleven-content-bottom-icon">
+                    <img src="./static/img/eleven/icon3.png" width=52 height=52 alt="">
+                </div>
+                <div class="eleven-content-bottom-icon">
+                    <img src="./static/img/eleven/icon4.png" width=52 height=52 alt="">
+                </div>
+                <div class="eleven-content-bottom-icon">
+                    <img src="./static/img/eleven/icon5.png" width=52 height=52 alt="">
+                </div>
+            </div>
+
+            <div class="eleven-content-bottom-block eleven-content-bottom-text">
+                友情链接
+            </div>
+
+            <div class="eleven-content-bottom-block">
+                <img src="./static/img/eleven/filfox.png" width=29 height=32 alt="">
+                <div class="eleven-content-bottom-text">
+                    Filfox节点地址
+                </div>
+            </div>
+            <div class="eleven-content-bottom-block">
+                <img src="./static/img/eleven/filecoin.png" width=27 height=28 alt="" style="margin-right: 10px">
+                <div class="eleven-content-bottom-text">
+                    Filecoin
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 
 <script>
@@ -53,62 +427,672 @@
     })
 </script>
 <style>
-    .header-iframe{
+    #app-content{
+        overflow-x: hidden;
+    }
+
+    .header-iframe {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 10;
+    }
+
+    .header-iframe-height {
         width: 100%;
-        height: 100px;
+        height: 124px;
     }
 
     .content-iframe {
         width: 100%;
-        height: 700px;
+        height: 847px;
     }
 
     .first-content {
         display: flex;
-        flex-direction: row;
-        background-color: #3F536E;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .first-content::after {
+        background-image: url("./static/img/bg/blue-bg.png");
+        background-size: 1240px 620px;
+        width: 1240px;
+        height: 620px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        content: "";
+        z-index: 5;
     }
 
     .first-content-details {
         display: flex;
         flex-direction: column;
-        background-color: #007aff;
         justify-content: center;
-        margin-left: 10vw;
     }
 
     .first-content-details-title {
         font-weight: bold;
-        font-size: 46px;
+        font-size: 77px;
+        line-height: 1;
+        color: #000045;
+        font-family: Impact,serif;
     }
 
     .first-content-details-title-level {
-        font-weight: 400;
-        font-size: 46px;
+        line-height: 1;
+        font-family: STHeiti-Light, serif;
+        font-size: 72px;
+        font-weight: 300;
+        color: #000045;
     }
 
     .first-content-details-value {
-        width: 500px;
-        font-size: 20px;
+        width: 510px;
+        height: 102px;
+        font-size: 23px;
+        font-family: YSHaoShenTi, serif;
+        font-weight: 400;
+        color: #8493A7;
+        line-height: 28px;
+        text-align: justify;
+        text-justify: auto;
     }
 
-    .first-content-details-button{
-        width: 150px;
-        height: 45px;
+    .first-content-details-button {
+        width: 203px;
+        height: 59px;
+        position: relative;
+    }
+
+    .index-button {
+        width: 203px;
+        height: 59px;
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 45px;
-        background-color: #f6c123;
+        border-radius: 59px;
+        background-image: url("./static/img/title-button.png");
+        background-size: 203px 59px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 10;
+        cursor: pointer;
+
+        font-size: 17px;
+        font-family: STHeiti-Light, serif;
+        font-weight: 300;
+        color: #FFFFFF;
     }
 
-    .two-content{
+    .first-content-details-button::after {
+        position: absolute;
+        z-index: 1;
+        left: -30px;
+        top: -6px;
+        width: 263px;
+        height: 105px;
+        background-image: url("./static/img/title-button-yy.png");
+        background-size: 263px 105px;
+        content: ''
+    }
+
+    .two-content {
         display: flex;
         align-items: center;
         flex-direction: column;
+        position: relative;
+    }
+
+    .two-content-right {
+        display: flex;
+        flex-direction: column;
+        margin-left: 460px;
+        margin-top: 113px;
+    }
+
+    .two-content-right-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .two-content-right-item-title {
+        font-size: 24px;
+        font-family: YSHaoShenTi, serif;
+        font-weight: 400;
+        color: #000045;
+    }
+
+    .two-content-right-item-content {
+        width: 740px;
+        font-size: 24px;
+        font-family: YSHaoShenTi, serif;
+        font-weight: 400;
+        color: #A4B9C7;
+        line-height: 28px;
+
+        text-align: justify;
+        text-justify: auto;
+    }
+
+    .first-content-bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 4;
+
+        width: 90vw;
+        height: 90vh;
+    }
+
+    .first-content-bg2 {
+        position: absolute;
+        right: -5vw;
+        top: 0;
+        z-index: 1;
+
+        width: 140vw;
+    }
+
+    .first-content-f {
+        position: absolute;
+        right: 0;
+        top: 114px;
+        z-index: 12;
+    }
+
+    .first-content-h1 {
+        position: absolute;
+        right: 0;
+        top: 212px;
+        z-index: 11;
+    }
+
+    .first-content-h2 {
+        position: absolute;
+        right: 0;
+        top: 338px;
+        z-index: 11;
+    }
+
+    .first-content-text1 {
+        position: absolute;
+        right: 95px;
+        top: 345px;
+        z-index: 11;
+    }
+
+    .first-content-text2 {
+        position: absolute;
+        right: 84px;
+        top: 352px;
+        z-index: 13;
+    }
+
+    .f-logo-icon {
+        position: absolute;
+        left: 0;
+        top: 380px;
+    }
+
+    .three-content {
+        width: 100%;
+        height: 1106px;
+        background-image: url("./static/img/three/bg.png");
+        background-size: 100vw 1106px;
+        position: relative;
+        z-index: 4;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .three-content-left {
+        display: flex;
+        flex-direction: column;
+        margin-top: 410px;
+    }
+
+    .three-content-left-content-title {
+        font-size: 24px;
+        font-family: YSHaoShenTi, serif;
+        font-weight: 400;
+        color: #FFFFFF;
+        line-height: 71px;
+
+        margin-bottom: 40px;
+    }
+
+    .three-content-left-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        font-size: 24px;
+        font-family: YSHaoShenTi, serif;
+        font-weight: 400;
+        color: #A4B9C7;
+        line-height: 28px;
+
+        margin-bottom: 45px;
+
+    }
+
+    .three-content-right {
+        width: 513px;
+        height: 498px;
+        margin-top: 441px;
+    }
+
+    .four-content {
+        height: 660px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .four-content-cards {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .four-content-card {
+        background-image: url("./static/img/fout/border1.png");
+        background-size: 493px 234px;
+        width: 493px;
+        height: 234px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .four-content-card-content {
+        font-size: 24px;
+        font-family: YSHaoShenTi, serif;
+        font-weight: 400;
+        color: #8493A7;
+        line-height: 28px;
+        text-align: center;
+
+        margin-top: 29px;
+    }
+
+    .four-content-card-2 {
+        background-image: url("./static/img/fout/border2.png");
+        background-size: 493px 234px;
+        width: 493px;
+        height: 234px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .five-content {
+        height: 900px;
+        width: 100%;
+        background-color: #00203F;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        position: relative;
+    }
+
+    .five-content-controller-button {
+        background-image: url("./static/img/five/controller-button.png");
+        background-size: 333px 69px;
+        width: 333px;
+        height: 69px;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 35px;
+        font-family: STHeiti-Medium, serif;
+        font-weight: 500;
+        color: #FFFFFF;
+        line-height: 52px;
+        cursor: pointer;
+    }
+
+    .five-content-controller-button-icon {
+        background-image: url("./static/img/five/controller-icon.png");
+        background-size: 29px 29px;
+        width: 29px;
+        height: 29px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-left: 12px;
+    }
+
+    .five-content-bottom {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .five-content-bottom-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .five-content-bottom-left-title {
+        font-size: 24px;
+        font-family: YSHaoShenTi, serif;
+        font-weight: 400;
+        color: #A4B9C7;
+        line-height: 28px;
+    }
+
+    .five-content-bottom-mid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 45px;
+    }
+
+    .five-content-bottom-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .six-content {
+        height: 780px;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        position: relative;
+    }
+
+    .six-content-bottom {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .six-content-bottom-left {
+        background-image: url("./static/img/six/code.png");
+        background-size: 805px 411px;
+        width: 805px;
+        height: 411px;
+
+        font-size: 24px;
+        font-family: YSHaoShenTi, serif;
+        font-weight: 400;
+        color: #FFFFFF;
+        line-height: 35px;
+
+        display: flex;
+        align-items: center;
+
+        margin-right: 100px;
+
+    }
+
+    .six-content-bottom-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .seven-content{
+        height: 654px;
+        width: 100%;
+        background-image: url("./static/img/seven/bg.png");
+        background-size: 100vw 654px;
+    }
+
+    .seven-content-left{
+        width: 55vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .seven-content-left-content{
+        width: 703px;
+        font-size: 24px;
+        font-family: YSHaoShenTi, serif;
+        font-weight: 400;
+        color: #A4B9C7;
+        line-height: 28px;
+
+        padding-right: 50px;
+        margin-bottom: 50px;
+    }
+
+    .seven-content-left-content-2{
+        font-size: 24px;
+        font-family: YSHaoShenTi, serif;
+        font-weight: 400;
+        color: #FBB03B;
+        line-height: 28px;
+
+        padding-right: 80px;
+    }
+
+    .eight-content{
+        height: 539px;
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .eight-content-left{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        height: 100%;
+
+        margin-right: 180px;
+    }
+
+    .eight-content-left-content{
+        width: 881px;
+        font-size: 24px;
+        font-family: YSHaoShenTi, serif;
+        font-weight: 400;
+        color: #8493A7;
+        line-height: 38px;
+        text-align: right;
+    }
+
+    .nine-content{
+        height: 595px;
+        width: 100%;
+        background-color: #00203F;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nine-content-bottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nine-content-bottom-left{
+        margin-right: 105px;
+    }
+
+    .nine-content-bottom-right{
+        width: 627px;
+        font-size: 24px;
+        font-family: YSHaoShenTi, serif;
+        font-weight: 400;
+        color: #A4B9C7;
+        line-height: 38px;
+
+        transform: translateY(-50%);
+    }
+
+    .ten-content{
+        height: 704px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ten-content-bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ten-content-bottom-items{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 24px;
+        font-family: YSHaoShenTi, serif;
+        font-weight: 400;
+        color: #8493A7;
+        line-height: 28px;
+    }
+    .ten-content-bottom-item-img{
+        position: absolute;
+        left: 0;
+    }
+    .ten-content-bottom-item-img-right{
+        position: absolute;
+        right: 0;
+    }
+    .ten-content-bottom-item{
+        background-image: url("./static/img/ten/border.png");
+        background-size: 1208px 159px;
+        width: 1208px;
+        height: 159px;
+
+        position: relative;
+    }
+    .ten-content-bottom-item2{
+        background-image: url("./static/img/ten/border2.png");
+        background-size: 1180px 135px;
+        width: 1180px;
+        height: 135px;
+
+        position: relative;
+        transform: translateX(-174px);
+    }
+    .ten-content-bottom-item3{
+        background-image: url("./static/img/ten/border3.png");
+        background-size: 687px 159px;
+        width: 687px;
+        height: 159px;
+
+        position: relative;
+        transform: translateX(-260px);
     }
 
 
+    .eleven-content{
+        width: 100%;
+        height: 922px;
+        display: flex;
+        flex-direction: column;
+
+        background-image: url("./static/img/eleven/bg.png");
+        background-size: 100vw 922px;
+        position: relative;
+    }
+
+    .eleven-content-top{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 165px;
+    }
+
+    .eleven-content-top-left{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        margin-right: 180px;
+    }
+
+    .eleven-content-top-left-content{
+        font-size: 24px;
+        font-family: YSHaoShenTi, serif;
+        font-weight: 400;
+        color: #A4B9C7;
+        line-height: 38px;
+
+        text-align: right;
+    }
+
+    .eleven-content-bottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        bottom: 135px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .eleven-content-bottom-icons{
+        display: flex;
+        flex-direction: row;
+
+        margin-right: 151px;
+    }
+
+    .eleven-content-bottom-icon{
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    .eleven-content-bottom-block{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+
+        margin-right: 39px;
+
+        cursor: pointer;
+    }
+
+    .eleven-content-bottom-text{
+        font-size: 24px;
+        font-family: YSHaoShenTi, serif;
+        font-weight: 400;
+        color: #A4B9C7;
+        line-height: 38px;
+        white-space:nowrap;
+    }
 </style>
 
 </html>
