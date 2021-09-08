@@ -1,4 +1,4 @@
-Vue.component('Tool', {
+Vue.component('t', {
     data: function () {
         return {
             operates: [

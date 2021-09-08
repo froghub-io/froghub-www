@@ -55,7 +55,8 @@
     justify-content: center;
     font-size: 12px;
     text-align: center;
-    transform: scale(0.8, 0.8)
+    transform: scale(0.8, 0.8);
+    cursor: pointer;
 }
 
 .tool-content-block:active {
@@ -65,4 +66,5 @@
 .tool-logo {
     margin: 8px;
     width: 34px;
+    cursor: pointer;
 }

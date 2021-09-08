@@ -8,21 +8,19 @@
     <link rel="icon" href="./static/favicon.ico">
     <title>FilFrog-Filecoin最佳实践</title>
     <meta name="keywords" content="FilFrog，Filecoin存储服务"/>
+    <link rel="stylesheet" type="text/css" href="./css/header.css">
     <link rel="stylesheet" type="text/css" href="./css/tool.css">
     <script src="./lib/vue.min.js"></script>
+    <script src="./component/Header.js"></script>
     <script src="./component/Tool.js"></script>
 </head>
 
 <body>
 <div id="app" @mousedown="onMouseDown">
-    <Tool></Tool>
-    <div id="overview" style="position:relative;">
+    <h></h>
+    <t></t>
+    <div id="overview">
         <img src="./static/img/bg/overview.png">
-        <div style="position:absolute;left: 30px;top: 5px;z-index: 99;">
-            <embed src="./static/img/bg/logo.svg" width="140" height="70"
-                   type="image/svg+xml"
-                   pluginspage="http://www.adobe.com/svg/viewer/install/" />
-        </div>
     </div>
     <div id="algorithm">
         <img src="./static/img/bg/algorithm.png">
@@ -199,22 +197,8 @@
                         switch (k) {
                             case "filFrog":
                                 break;
-                            case "solution":
-                                break;
-                            case "cloudC2":
-                                alert("尽情期待...")
-                                break;
                             case "console":
-                                break;
-                            case "wechat":
-                                break;
-                            case "email":
-                                break;
-                            case "qq":
-                                break;
-                            case "phone":
-                                break;
-                            case "github":
+                                window.open("https://console.froghub.cn")
                                 break;
                             case "filFox":
                                 window.open("https://filfox.info/")
@@ -241,6 +225,7 @@
 
     #app {
         overflow-x: hidden;
+        position: relative;
     }
 
     img {
