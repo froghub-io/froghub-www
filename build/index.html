@@ -16,8 +16,13 @@
 <body>
 <div id="app" @mousedown="onMouseDown">
     <Tool></Tool>
-    <div id="overview">
+    <div id="overview" style="position:relative;">
         <img src="./static/img/bg/overview.png">
+        <div style="position:absolute;left: 30px;top: 5px;z-index: 99;">
+            <embed src="./static/img/bg/logo.svg" width="140" height="70"
+                   type="image/svg+xml"
+                   pluginspage="http://www.adobe.com/svg/viewer/install/" />
+        </div>
     </div>
     <div id="algorithm">
         <img src="./static/img/bg/algorithm.png">
@@ -49,8 +54,59 @@
     <div id="monitor">
         <img src="./static/img/bg/monitor.png">
     </div>
-    <div id="footer">
-        <img src="./static/img/bg/footer.png">
+    <div class="eleven-content-bottom">
+        <div style="margin-right: 94px">
+            <img src="./static/img/eleven/logo.png" width="198" height="38" alt="FILFROG">
+        </div>
+
+        <div class="eleven-content-bottom-icons">
+            <div class="eleven-content-bottom-icon icon-phone">
+                <img src="./static/img/eleven/icon1.png" width=52 height=52 alt="">
+                <div class="icon-tip-wx">
+                    <img style="width: 85%;height: 85%;display: inline-block;transform: translateY(10px)" src="./static/img/eleven/wx.png" width=52 height=52 alt="">
+                </div>
+            </div>
+            <a href="mailto:froghub@163.com" class="eleven-content-bottom-icon icon-phone">
+                <img src="./static/img/eleven/icon2.png" width=52 height=52 alt="">
+                <div class="icon-tip">
+                    froghub@163.com
+                </div>
+            </a>
+            <div class="eleven-content-bottom-icon icon-phone">
+                <img src="./static/img/eleven/icon3.png" width=52 height=52 alt="">
+                <div class="icon-tip">
+                    +86 13055258113
+                </div>
+            </div>
+            <a href="tencent://message/?uin=597800451&Site=Sambow&Menu=yes" class="eleven-content-bottom-icon icon-phone">
+                <img src="./static/img/eleven/icon4.png" width=52 height=52 alt="">
+                <div class="icon-tip">
+                   QQ: 597800451
+                </div>
+            </a>
+            <div class="eleven-content-bottom-icon">
+                <a href="https://github.com/froghub-io" target="_blank">
+                    <img src="./static/img/eleven/icon5.png" width=52 height=52 alt="" >
+                </a>
+            </div>
+        </div>
+
+        <div class="eleven-content-bottom-block eleven-content-bottom-text font-special">
+            友情链接
+        </div>
+
+        <div class="eleven-content-bottom-block">
+            <img src="./static/img/eleven/filfox.png" width=29 height=32 alt="">
+            <div class="eleven-content-bottom-text font-special">
+                Filfox节点地址
+            </div>
+        </div>
+        <div class="eleven-content-bottom-block">
+            <img src="./static/img/eleven/filecoin.png" width=27 height=28 alt="" style="margin-right: 10px">
+            <div class="eleven-content-bottom-text font-special">
+                Filecoin
+            </div>
+        </div>
     </div>
 </div>
 <script>
@@ -192,6 +248,90 @@
         width: 100%;
     }
 
+    .eleven-content-bottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        height: 350px;
+        background-color: #00203F;
+    }
+
+    .eleven-content-bottom-icons{
+        display: flex;
+        flex-direction: row;
+
+        margin-right: 120px;
+    }
+
+    .eleven-content-bottom-icon{
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    .icon-phone{
+        position: relative;
+    }
+
+    .icon-tip{
+        display: none;
+        position: absolute;
+        top: -60px;
+        transform: translateX(-35%);
+        width: 180px;
+        height: 40px;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: #ffffff;
+        text-align: center;
+        line-height: 40px;
+        color: #00203F;
+        border-radius: 10px;
+    }
+
+    .icon-tip-wx{
+        display: none;
+        position: absolute;
+        top: -160px;
+        transform: translateX(-35%);
+        width: 140px;
+        height: 140px;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: #ffffff;
+        text-align: center;
+        color: #00203F;
+        border-radius: 10px;
+    }
+
+    .icon-phone:hover .icon-tip{
+        display: block;
+    }
+    .icon-phone:hover .icon-tip-wx{
+        display: block;
+    }
+
+    .eleven-content-bottom-block{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+
+        margin-right: 39px;
+
+        cursor: pointer;
+    }
+
+    .eleven-content-bottom-text{
+        font-size: 18px;
+        font-family: YSHaoShenTi, serif;
+        font-weight: 400;
+        color: #A4B9C7;
+        line-height: 38px;
+        white-space:nowrap;
+    }
 </style>
 </body>
 </html>
