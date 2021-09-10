@@ -5,7 +5,9 @@
     right: 50px;
     height: 80px;
 }
+
 .header {
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -21,6 +23,7 @@
 }
 
 .header-row {
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -42,6 +45,7 @@
 }
 
 .header-menu {
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     align-items: center;
