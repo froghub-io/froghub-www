@@ -15,7 +15,7 @@ Vue.component('h', {
     template: `
      <div class="header-box">
          <div class="header">
-             <div class="header-row">
+             <div class="header-row" style="justify-content: flex-start">
                 <img class='flogo' src='./static/img/flogo.png'/>
                 <img class='filfrog' src='./static/img/filfrog.png'/>
             </div>
