@@ -27,10 +27,12 @@
 }
 
 .header .flogo {
+    object-fit: contain;
     height: 32px;
 }
 
 .header .filfrog {
+    object-fit: contain;
     height: 16px;
     margin-left: 10px;
 }
@@ -41,6 +43,7 @@
 }
 
 .header-menu-img {
+    object-fit: contain;
     height: 20px;
     width: 28px;
 }
