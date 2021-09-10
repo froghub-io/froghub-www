@@ -14,3 +14,23 @@ function isMobile() {
         return false;
     }
 }
+
+function indexToH5() {
+    const domain = `${window.location.protocol}//${window.location.host}`
+    if (domain.indexOf("127.0.0.1") != -1) {
+        return
+    }
+    if (domain == window.location.href || `${domain}/` == window.location.href) {
+        window.location.href = domain + '/h5.html'
+    }
+}
+
+function h5ToIndex() {
+    const domain = `${window.location.protocol}//${window.location.host}`
+    if (domain.indexOf("127.0.0.1") != -1) {
+        return
+    }
+    if (window.location.href.endsWith('h5.html')) {
+        window.location.href = domain
+    }
+}
