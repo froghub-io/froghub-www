@@ -9,7 +9,7 @@ Vue.component('h', {
             window.open("https://github.com/froghub-io")
         },
         onCloudC2() {
-            window.open("https://console.froghub.cn")
+            window.open("https://github.com/froghub-io/lotus-cloudc2")
         }
     },
     template: `
@@ -28,7 +28,6 @@ Vue.component('h', {
                     <img class="header-menu-img" src="./static/img/menu-ico.png">
                     <span>CloudC2</span>
                 </div>
-                <div style="margin-right: 12vw"/>
             </div>
         </div>
     </div>
