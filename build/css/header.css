@@ -20,10 +20,14 @@
     background: transparent;
 }
 
-.header div {
+.header-row {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.header-menu-group {
+    white-space: nowrap;
 }
 
 .header .flogo {
@@ -38,6 +42,9 @@
 }
 
 .header-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin-left: 4vw;
     cursor: pointer;
 }

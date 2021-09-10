@@ -15,11 +15,11 @@ Vue.component('h', {
     template: `
      <div class="header-box">
          <div class="header">
-             <div>
+             <div class="header-row">
                 <img class='flogo' src='./static/img/flogo.png'/>
                 <img class='filfrog' src='./static/img/filfrog.png'/>
             </div>
-            <div class="header-menu-group">
+            <div class="header-row header-menu-group">
                 <div class="header-menu" @click="onSolve">
                     <img class="header-menu-img" src="./static/img/menu-ico2.png">
                     <span>解决方案</span>
