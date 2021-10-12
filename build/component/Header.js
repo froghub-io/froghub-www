@@ -10,6 +10,9 @@ Vue.component('h', {
         },
         onCloudC2() {
             window.open("https://github.com/froghub-io/lotus-cloudc2")
+        },
+        onXiufu(){
+            window.open("https://github.com/froghub-io/filecoin-sealer-recover")
         }
     },
     template: `
@@ -27,6 +30,10 @@ Vue.component('h', {
                 <div class="header-menu" @click="onCloudC2">
                     <img class="header-menu-img" src="./static/img/menu-ico.png">
                     <span>CloudC2</span>
+                </div>
+               <div class="header-menu" @click="onXiufu">
+                    <img class="header-menu-img" src="./static/img/menu-ico3.png">
+                    <span>扇区修复</span>
                 </div>
             </div>
         </div>
